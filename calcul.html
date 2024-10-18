@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    .result {
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: rgb(233, 215, 215) ;
+    border: 1px solid rgb(223, 215, 215);
+    width: 290px;
+    }
+    .calculator {
+        width: 320px;
+  
+    border: 1px solid black ;
+    padding: 20px;
+    }
+    .button {  
+     width: 64px;
+    height: 50px;
+    margin: 5px;
+ }
+    </style>
+</head>
+<body>
+  <div class="calculator">
+<input type="number" class="result"  id='inpute'> </input>
+  <button class="button" onclick="typingNumber('1')">1</button>
+  <button class="button" onclick="typingNumber('2')">2</button>                                                             
+  <button class="button" onclick="typingNumber('3')">3</button>
+  <button class="button" onclick="operation('+')">+</button>
+  <br>
+  <button class="button" onclick="typingNumber('4')">4</button>
+  <button class="button" onclick="typingNumber('5')">5</button>
+  <button class="button" onclick="typingNumber('6')">6</button>
+  <button class="button"onclick="operation('-')">-</button>
+  <br>
+  <button  class="button" onclick="typingNumber('7')">7</button>
+  <button class="button" onclick="typingNumber('8')">8</button>
+  <button class="button" onclick="typingNumber('9')">9</button>
+  <button class="button"onclick="operation('*')">*</button>
+  <br>
+  <button class="button" onclick="typingNumber('0')">0</button>
+  <button class="button">C</button>
+  <button class="button" onclick="equals()">=</button>
+  <button class="button"onclick="operation('/')">/</button>
+ </div>
+    <script src="challenge3.js"></script>
+</body>
+</html>
